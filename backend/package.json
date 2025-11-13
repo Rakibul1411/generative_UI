@@ -1,0 +1,32 @@
+{
+  "name": "generative-ui-backend",
+  "version": "1.0.0",
+  "description": "Simple AI form generation backend",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "ai",
+    "form-generation",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "volta": {
+    "node": "24.11.0"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.17.3",
+    "@google/genai": "^1.29.1",
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
