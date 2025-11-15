@@ -36,5 +36,4 @@ Important rules:
 - Infer appropriate validation rules (email validation for email fields, password confirmation, etc.)
 - Add helpful placeholders and hints
 - Include appropriate required fields
-- For password confirmation, create a separate "confirmPassword" field
 - Return ONLY valid JSON, no markdown formatting, no explanations`;

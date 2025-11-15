@@ -20,7 +20,7 @@ const AVAILABLE_MODELS = {
 
 
 const MODEL_FALLBACK_ORDER = [
-    AVAILABLE_MODELS.FLASH,           
+    AVAILABLE_MODELS.FLASH,         
     AVAILABLE_MODELS.FLASH_LITE,      
     AVAILABLE_MODELS.FLASH_2,         
     AVAILABLE_MODELS.FLASH_2_LITE,
@@ -149,8 +149,10 @@ const attemptGenerationWithFallback = async (fullPrompt) => {
                 }
             });
 
+            console.log("✅ Successfully used model:", response);
+
             const text = response.text;
-            console.log(`✅ Successfully used model: ${currentModel}`);
+            console.log("✅ Successfully used model:", text);
             
             // Try to parse the response
             try {

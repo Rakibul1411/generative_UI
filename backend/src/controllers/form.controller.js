@@ -4,6 +4,8 @@ export const generateForm = async (req, res) => {
     try {
         const { prompt } = req.body;
 
+        console.log('Received prompt:', prompt);
+
         if (!prompt || typeof prompt !== 'string') {
             return res.status(400).json({
                 success: false,
@@ -37,7 +39,6 @@ export const generateForm = async (req, res) => {
         });
 
     } catch (error) {
-        console.error('❌ Error in generateForm controller:', error);
         res.status(500).json({
             success: false,
             error: 'Failed to generate form',

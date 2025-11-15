@@ -53,3 +53,5 @@ public/
 .env
 environments//
 /environments/*.ts
+dist/
+.angular/
